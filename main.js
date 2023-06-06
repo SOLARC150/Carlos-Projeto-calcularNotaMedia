@@ -37,8 +37,6 @@ function adicionaLinha(){
 
         linhas += linha;
 
-        
-
         inputNomeAtividade.value = '';
         inputNotaAtividade.value = '';
     }
@@ -53,7 +51,7 @@ function atualizaMediaFinal() {
     
     let mediaFinal = calcularMedia();
 
-    document.getElementById('media').innerHTML = mediaFinal;
+    document.getElementById('media').innerHTML = mediaFinal.toFixed(2);
     document.getElementById('resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado
 }
 
